@@ -20,7 +20,7 @@ public class BusinessClass extends CarsParameters {
         if (!(o instanceof BusinessClass)) return false;
         if (!super.equals(o)) return false;
         BusinessClass that = (BusinessClass) o;
-        return model == that.model;
+        return model.equals(that.model);
     }
 
     @Override

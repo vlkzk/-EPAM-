@@ -8,23 +8,19 @@ abstract public class CarsParameters {
     private int fuelConsumption;
     private int maximumDrivingDistance;
     private int carCost;
-    private int passangerCapacity;
+    private int passengerCapacity;
 
-    public CarsParameters(String model, int maxSpeed, int fuelConsumption, int maximumDrivingDistance, int carCost, int passangerCapacity) {
-        this.carCost = carCost;
-        this.fuelConsumption = fuelConsumption;
-        this.maximumDrivingDistance = maximumDrivingDistance;
-        this.maxSpeed = maxSpeed;
+    public CarsParameters(String model, int maxSpeed, int fuelConsumption, int maxDrivingDistance, int carCost, int passengerCapacity) {
         this.model = model;
-        this.passangerCapacity = passangerCapacity;
+        this.maxSpeed = maxSpeed;
+        this.fuelConsumption = fuelConsumption;
+        this.maximumDrivingDistance = maxDrivingDistance;
+        this.carCost = carCost;
+        this.passengerCapacity = passengerCapacity;
     }
 
     public String getModel() {
         return model;
-    }
-
-    public int getPassangerCapacity() {
-        return passangerCapacity;
     }
 
     public int getMaxSpeed() {
@@ -43,22 +39,8 @@ abstract public class CarsParameters {
         return carCost;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        CarsParameters that = (CarsParameters) o;
-        return maxSpeed == that.maxSpeed &&
-                fuelConsumption == that.fuelConsumption &&
-                maximumDrivingDistance == that.maximumDrivingDistance &&
-                carCost == that.carCost &&
-                passangerCapacity == that.passangerCapacity &&
-                Objects.equals(model, that.model);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(model, maxSpeed, fuelConsumption, maximumDrivingDistance, carCost, passangerCapacity);
+    public int getPassengerCapacity() {
+        return passengerCapacity;
     }
 
     @Override
@@ -69,7 +51,25 @@ abstract public class CarsParameters {
                 ", fuelConsumption=" + fuelConsumption +
                 ", maximumDrivingDistance=" + maximumDrivingDistance +
                 ", carCost=" + carCost +
-                ", passangerCapacity=" + passangerCapacity +
+                ", passengerCapacity=" + passengerCapacity +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CarsParameters that = (CarsParameters) o;
+        return maxSpeed == that.maxSpeed &&
+                fuelConsumption == that.fuelConsumption &&
+                maximumDrivingDistance == that.maximumDrivingDistance &&
+                carCost == that.carCost &&
+                passengerCapacity == that.passengerCapacity &&
+                Objects.equals(model, that.model);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(model, maxSpeed, fuelConsumption, maximumDrivingDistance, carCost, passengerCapacity);
     }
 }

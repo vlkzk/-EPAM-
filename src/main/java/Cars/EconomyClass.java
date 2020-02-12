@@ -20,7 +20,7 @@ public class EconomyClass extends CarsParameters {
         if (!(o instanceof EconomyClass)) return false;
         if (!super.equals(o)) return false;
         EconomyClass that = (EconomyClass) o;
-        return model == that.model;
+        return model.equals(that.model);
     }
 
     @Override

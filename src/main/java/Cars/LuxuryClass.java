@@ -20,7 +20,7 @@ public class LuxuryClass extends CarsParameters {
         if (!(o instanceof LuxuryClass)) return false;
         if (!super.equals(o)) return false;
         LuxuryClass that = (LuxuryClass) o;
-        return model == that.model;
+        return model.equals(that.model);
     }
 
     @Override
