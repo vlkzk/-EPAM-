@@ -1,30 +1,27 @@
 package Cars;
 
-import java.util.Objects;
-
 public class EconomyClass extends CarsParameters {
-    public EconomyClass(String model, int maxSpeed, int fuelConsumption, int maximumDrivingDistance, int carCost, int passangerCapacity) {
-        super(model, maxSpeed, fuelConsumption, maximumDrivingDistance, carCost, passangerCapacity);
+
+    private String model;
+
+    public EconomyClass(String model, int maxSpeed, int fuelConsumption, int maximumDrivingDistance, int carCost, int passengerCapacity) {
+        super(model, maxSpeed, fuelConsumption, maximumDrivingDistance, carCost, passengerCapacity);
+        this.model = model;
     }
 
     @Override
     public String toString() {
-        return "EconomyClass{" +
-                "model='" + model + '\'' +
-                '}';
+        return super.toString().replace("{", "EconomyClass" +
+                "model='" + model + '\'');
     }
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof EconomyClass)) return false;
-        if (!super.equals(o)) return false;
-        EconomyClass that = (EconomyClass) o;
-        return model.equals(that.model);
+        return super.equals(o);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), model);
+        return super.hashCode();
     }
 }

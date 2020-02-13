@@ -19,10 +19,6 @@ abstract public class CarsParameters {
         this.passengerCapacity = passengerCapacity;
     }
 
-    public String getModel() {
-        return model;
-    }
-
     public int getMaxSpeed() {
         return maxSpeed;
     }
@@ -31,28 +27,18 @@ abstract public class CarsParameters {
         return fuelConsumption;
     }
 
-    public int getMaximumDrivingDistance() {
-        return maximumDrivingDistance;
-    }
-
     public int getCarCost() {
         return carCost;
     }
 
-    public int getPassengerCapacity() {
-        return passengerCapacity;
-    }
-
     @Override
     public String toString() {
-        return "CarsParameters{" +
-                "model='" + model + '\'' +
-                ", maxSpeed=" + maxSpeed +
-                ", fuelConsumption=" + fuelConsumption +
-                ", maximumDrivingDistance=" + maximumDrivingDistance +
-                ", carCost=" + carCost +
-                ", passengerCapacity=" + passengerCapacity +
-                '}';
+        return "model = '" + model + '\'' +
+                ", maxSpeed = " + maxSpeed +
+                ", fuelConsumption = " + fuelConsumption +
+                ", maximumDrivingDistance = " + maximumDrivingDistance +
+                ", carCost = " + carCost +
+                ", passengerCapacity = " + passengerCapacity;
     }
 
     @Override

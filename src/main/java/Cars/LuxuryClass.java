@@ -1,30 +1,27 @@
 package Cars;
 
-import java.util.Objects;
-
 public class LuxuryClass extends CarsParameters {
-    public LuxuryClass(String model, int maxSpeed, int fuelConsumption, int maximumDrivingDistance, int carCost, int passangerCapacity) {
-        super(model, maxSpeed, fuelConsumption, maximumDrivingDistance, carCost, passangerCapacity);
+
+    private String model;
+
+    public LuxuryClass(String model, int maxSpeed, int fuelConsumption, int maximumDrivingDistance, int carCost, int passengerCapacity) {
+        super(model, maxSpeed, fuelConsumption, maximumDrivingDistance, carCost, passengerCapacity);
+        this.model = model;
     }
 
     @Override
     public String toString() {
-        return "LuxuryClass{" +
-                "model='" + model + '\'' +
-                '}';
+        return super.toString().replace("{", "LuxuryClass" +
+                "model='" + model + '\'');
     }
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof LuxuryClass)) return false;
-        if (!super.equals(o)) return false;
-        LuxuryClass that = (LuxuryClass) o;
-        return model.equals(that.model);
+        return super.equals(o);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), model);
+        return super.hashCode();
     }
 }
