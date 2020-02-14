@@ -12,7 +12,7 @@ public class RowsInReverse {
 
     public static void main(String[] args) {
         String fileName = dir() + "poem.txt";
-        String fileName1 = dir() + "poemInReverse.txt";
+        String fileNameReverse = dir() + "poemInReverse.txt";
         List<String> poem = new ArrayList<>();
         String readedLine;
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
@@ -24,7 +24,7 @@ public class RowsInReverse {
         }
 
         List<String> reversPoem = new ArrayList<>();
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName1))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileNameReverse))) {
             for (int i = poem.size() - 1; i >= 0; i--) {
                 String line = poem.get(i);
                 reversPoem.add(line);
