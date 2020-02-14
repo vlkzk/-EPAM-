@@ -4,9 +4,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Objects;
 
-public class AdditionalUnit {
+public class CatalogList {
     public static void main(String[] args) throws IOException {
-        Class<AdditionalUnit> cClass = AdditionalUnit.class;
+        Class<CatalogList> cClass = CatalogList.class;
         String p = System.getProperty("user.dir")
                 + File.separator + "src" + File.separator + "main" + File.separator + "OptionalTask" + File.separator +
                 cClass
@@ -45,9 +45,9 @@ public class AdditionalUnit {
     private static String getPath() {
         return System.getProperty("user.dir")
                 + File.separator + "src" + File.separator +
-                AdditionalUnit.class
+                CatalogList.class
                         .getSimpleName()
-                        .replace(AdditionalUnit.class.getSimpleName(), "")
+                        .replace(CatalogList.class.getSimpleName(), "")
                         .replace(".", File.separator);
 
     }
