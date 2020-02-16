@@ -1,4 +1,5 @@
 import Cars.*;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -31,7 +32,7 @@ public class Runner {
                 .sortByMaxFuelConsumption()
                 .toString());
         double carCost = 0.0;
-        for (CarsParameters carsParameters : allCarsInPark){
+        for (CarsParameters carsParameters : allCarsInPark) {
             carCost += carsParameters.getCarCost();
         }
         System.out.println("Cost all cars in park: " + carCost);
