@@ -32,7 +32,7 @@ public class Starter {
             new FacultyOfInformationTechnology("Faculty Of Information Technology", GROUP_PROGERS, "Ераховец Алексей Эдуардович", 3, 9, 7, 4)
     );
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws UniversityException {
 
         double score;
         int counter = 0;
@@ -45,18 +45,18 @@ public class Starter {
         List<FacultiesParameters> listOfStudentsSpecificGroup = new ArrayList<>();
 
 
-
         for (FacultiesParameters fP : listOfStudents) {
             counter++;
             score = ((fP.getLanguageScore() + fP.getMathScore() + fP.getPhysicsScore() + fP.getPhilosophyScore()) / 4.0);
             System.out.printf(fP.getStudent() + " grade point average = %.2f\n", score);
         }
 
-
-
         for (FacultiesParameters fP : listOfStudents) {
-            if (fP.getFaculty().equals("Faculty Of Automotive Engineering")) listOfStudentsSpecificFaculty.add(fP);
+            if (fP.getFaculty().equals("Faculty Of Automotive Engineering")) {
+                listOfStudentsSpecificFaculty.add(fP);
+            }
         }
+
         for (FacultiesParameters fP : listOfStudentsSpecificFaculty) {
             if (fP.getGroup().equals(GROUP_AUTOMATIC.toString())) listOfStudentsSpecificGroup.add(fP);
         }
@@ -67,7 +67,6 @@ public class Starter {
             counter++;
         }
         System.out.printf("GPA at the Faculty of Automotive Engineering in the " + GROUP_AUTOMATIC.toString() + " in mathematics = %.2f\n", (score / counter));
-
 
 
         score = 0;
