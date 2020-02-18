@@ -5,10 +5,17 @@ import Groups.GroupsFAE;
 public class FacultyOfAutomotiveEngineering extends FacultiesParameters{
 
     private GroupsFAE groupsFAE;
+    private FacultiesEnum facultyAE;
 
-    public FacultyOfAutomotiveEngineering(String faculty, GroupsFAE groupsFAE, String student, int mathScore, int physicsScore, int languageScore, int philosophyScore) {
-        super(faculty, student, mathScore, physicsScore, languageScore, philosophyScore);
+    public FacultyOfAutomotiveEngineering(FacultiesEnum facultyAE, GroupsFAE groupsFAE, String student, int mathScore, int physicsScore, int languageScore, int philosophyScore) {
+        super(student, mathScore, physicsScore, languageScore, philosophyScore);
         this.groupsFAE = groupsFAE;
+        this.facultyAE = facultyAE;
+    }
+
+    @Override
+    public String getFaculty() {
+        return facultyAE.toString();
     }
 
     @Override
@@ -20,7 +27,7 @@ public class FacultyOfAutomotiveEngineering extends FacultiesParameters{
     public String toString() {
         return super.toString().replace("}",
                 ", group = " + groupsFAE +
-                        '}');
+                        ", faculty = " + facultyAE );
     }
 
     @Override

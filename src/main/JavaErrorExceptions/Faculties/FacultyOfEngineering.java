@@ -5,10 +5,12 @@ import Groups.GroupsE;
 public class FacultyOfEngineering extends FacultiesParameters {
 
     private GroupsE groupsE;
+    private FacultiesEnum facultyE;
 
-    public FacultyOfEngineering(String faculty, GroupsE groupsE, String student, int mathScore, int physicsScore, int languageScore, int philosophyScore) {
-        super(faculty, student, mathScore, physicsScore, languageScore, philosophyScore);
+    public FacultyOfEngineering(FacultiesEnum facultyE, GroupsE groupsE, String student, int mathScore, int physicsScore, int languageScore, int philosophyScore) {
+        super(student, mathScore, physicsScore, languageScore, philosophyScore);
         this.groupsE = groupsE;
+        this.facultyE = facultyE;
     }
 
     @Override
@@ -17,10 +19,15 @@ public class FacultyOfEngineering extends FacultiesParameters {
     }
 
     @Override
+    public String getFaculty() {
+        return facultyE.toString();
+    }
+
+    @Override
     public String toString() {
         return super.toString().replace("}",
                 ", group = " + groupsE +
-                        '}');
+                        ", faculty = " + facultyE );
     }
 
     @Override

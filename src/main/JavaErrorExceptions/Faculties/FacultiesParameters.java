@@ -4,15 +4,14 @@ import java.util.Objects;
 
 abstract public class FacultiesParameters {
     String faculty;
+    String group;
     String student;
     int mathScore;
     int physicScore;
     int languageScore;
     int philosophyScore;
-    String group;
 
-    public FacultiesParameters(String faculty, String student, int mathScore, int physicsScore, int languageScore, int philosophyScore) {
-        this.faculty = faculty;
+    public FacultiesParameters(String student, int mathScore, int physicsScore, int languageScore, int philosophyScore) {
         this.student = student;
         this.mathScore = mathScore;
         this.physicScore = physicsScore;
@@ -25,6 +24,7 @@ abstract public class FacultiesParameters {
     public String getFaculty() {
         return faculty;
     }
+
 
     public String getStudent() {
         return student;
@@ -48,7 +48,7 @@ abstract public class FacultiesParameters {
 
     @Override
     public String toString() {
-        return  " information = '" + faculty + '\'' +
+        return  "information = '" + getFaculty() + '\'' +
                 ", group = '" + getGroup() + '\'' +
                 ", student = '" + student + '\'' +
                 ", math score = '" + mathScore + '\'' +
