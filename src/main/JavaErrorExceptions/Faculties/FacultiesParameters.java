@@ -3,6 +3,7 @@ package Faculties;
 import java.util.Objects;
 
 abstract public class FacultiesParameters {
+    int id;
     String faculty;
     String group;
     String student;
@@ -11,7 +12,8 @@ abstract public class FacultiesParameters {
     int languageScore;
     int philosophyScore;
 
-    public FacultiesParameters(String student, int mathScore, int physicsScore, int languageScore, int philosophyScore) {
+    public FacultiesParameters(int id, String student, int mathScore, int physicsScore, int languageScore, int philosophyScore) {
+        this.id = id;
         this.student = student;
         this.mathScore = mathScore;
         this.physicScore = physicsScore;
@@ -19,12 +21,13 @@ abstract public class FacultiesParameters {
         this.philosophyScore = philosophyScore;
     }
 
-    public String getGroup() {return group;}
+    public String getGroup() {
+        return group;
+    }
 
     public String getFaculty() {
         return faculty;
     }
-
 
     public String getStudent() {
         return student;
@@ -42,19 +45,21 @@ abstract public class FacultiesParameters {
         return languageScore;
     }
 
-    public int getPhilosophyScore() {
-        return philosophyScore;
-    }
 
     @Override
     public String toString() {
-        return  "information = '" + getFaculty() + '\'' +
+        return "id = " + id +
+                ", faculty = '" + getFaculty() + '\'' +
                 ", group = '" + getGroup() + '\'' +
                 ", student = '" + student + '\'' +
-                ", math score = '" + mathScore + '\'' +
-                ", physics score = '" + physicScore + '\'' +
-                ", language score = '" + languageScore + '\'' +
-                ", philosophy score = '" + philosophyScore + '\'';
+                ", mathScore = " + mathScore +
+                ", physicScore = " + physicScore +
+                ", languageScore = " + languageScore +
+                ", philosophyScore = " + philosophyScore;
+    }
+
+    public int getPhilosophyScore() {
+        return philosophyScore;
     }
 
     @Override

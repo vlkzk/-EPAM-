@@ -7,8 +7,8 @@ public class FacultyOfInformationTechnology extends FacultiesParameters {
     private GroupsIT groupsIT;
     private FacultiesEnum facultyIT;
 
-    public FacultyOfInformationTechnology(FacultiesEnum facultyIT, GroupsIT groupsIT, String student, int mathScore, int physicsScore, int languageScore, int philosophyScore) {
-        super(student, mathScore, physicsScore, languageScore, philosophyScore);
+    public FacultyOfInformationTechnology(int id, FacultiesEnum facultyIT, GroupsIT groupsIT, String student, int mathScore, int physicsScore, int languageScore, int philosophyScore) {
+        super(id, student, mathScore, physicsScore, languageScore, philosophyScore);
         this.groupsIT = groupsIT;
         this.facultyIT = facultyIT;
     }
