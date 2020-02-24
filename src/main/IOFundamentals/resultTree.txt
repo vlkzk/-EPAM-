@@ -1,0 +1,293 @@
+Skyrim
+|     binkw64.dll
+|     ControlMap_Custom.txt
+|
+|-----Data
+|     Dawnguard.esm
+|     Dragonborn.esm
+|     HearthFires.esm
+|
+|-----ShaderCache
+|     Skyrim - Animations.bsa
+|     Skyrim - Interface.bsa
+|     Skyrim - Meshes0.bsa
+|     Skyrim - Meshes1.bsa
+|     Skyrim - Misc.bsa
+|     Skyrim - Patch.bsa
+|     Skyrim - Shaders.bsa
+|     Skyrim - Sounds.bsa
+|     Skyrim - Textures0.bsa
+|     Skyrim - Textures1.bsa
+|     Skyrim - Textures2.bsa
+|     Skyrim - Textures3.bsa
+|     Skyrim - Textures4.bsa
+|     Skyrim - Textures5.bsa
+|     Skyrim - Textures6.bsa
+|     Skyrim - Textures7.bsa
+|     Skyrim - Textures8.bsa
+|     Skyrim - Voices_ru0.bsa
+|     Skyrim.esm
+|     Update.esm
+|
+|-----Video
+|     BGS_Logo.bik
+|     GameLauncher.exe
+|     gpu.txt
+|     high.ini
+|     icon.ico
+|     installscript.vdf
+|
+|-----jre
+|
+|-----bin
+|     awt.dll
+|     bci.dll
+|
+|-----client
+|     jvm.dll
+|     Xusage.txt
+|     dcpr.dll
+|     decora_sse.dll
+|     deploy.dll
+|
+|-----dtplugin
+|     deployJava1.dll
+|     npdeployJava1.dll
+|     dt_shmem.dll
+|     dt_socket.dll
+|     eula.dll
+|     fontmanager.dll
+|     fxplugins.dll
+|     glass.dll
+|     glib-lite.dll
+|     gstreamer-lite.dll
+|     hprof.dll
+|     instrument.dll
+|     j2pcsc.dll
+|     j2pkcs11.dll
+|     jaas_nt.dll
+|     jabswitch.exe
+|     java-rmi.exe
+|     java.dll
+|     java.exe
+|     JavaAccessBridge-32.dll
+|     JavaAccessBridge.dll
+|     javacpl.cpl
+|     javacpl.exe
+|     javafx_font.dll
+|     javafx_font_t2k.dll
+|     javafx_iio.dll
+|     javaw.exe
+|     javaws.exe
+|     java_crw_demo.dll
+|     jawt.dll
+|     JAWTAccessBridge-32.dll
+|     JAWTAccessBridge.dll
+|     jdwp.dll
+|     jfr.dll
+|     jfxmedia.dll
+|     jfxwebkit.dll
+|     jjs.exe
+|     jli.dll
+|     jp2iexp.dll
+|     jp2launcher.exe
+|     jp2native.dll
+|     jp2ssv.dll
+|     jpeg.dll
+|     jsdt.dll
+|     jsound.dll
+|     jsoundds.dll
+|     kcms.dll
+|     keytool.exe
+|     kinit.exe
+|     klist.exe
+|     ktab.exe
+|     lcms.dll
+|     management.dll
+|     mlib_image.dll
+|     msvcp120.dll
+|     msvcr100.dll
+|     msvcr120.dll
+|     net.dll
+|     nio.dll
+|     npt.dll
+|     orbd.exe
+|     pack200.exe
+|
+|-----plugin2
+|     msvcr100.dll
+|     npjp2.dll
+|     policytool.exe
+|     prism_common.dll
+|     prism_d3d.dll
+|     prism_sw.dll
+|     resource.dll
+|     rmid.exe
+|     rmiregistry.exe
+|     servertool.exe
+|     splashscreen.dll
+|     ssv.dll
+|     ssvagent.exe
+|     sunec.dll
+|     sunmscapi.dll
+|     t2k.dll
+|     tnameserv.exe
+|     unpack.dll
+|     unpack200.exe
+|     verify.dll
+|     w2k_lsa_auth.dll
+|     WindowsAccessBridge-32.dll
+|     WindowsAccessBridge.dll
+|     wsdetect.dll
+|     zip.dll
+|     COPYRIGHT
+|
+|-----lib
+|     accessibility.properties
+|     calendars.properties
+|     charsets.jar
+|     classlist
+|
+|-----cmm
+|     CIEXYZ.pf
+|     GRAY.pf
+|     LINEAR_RGB.pf
+|     PYCC.pf
+|     sRGB.pf
+|     content-types.properties
+|     currency.data
+|
+|-----deploy
+|     ffjcext.zip
+|     messages.properties
+|     messages_de.properties
+|     messages_es.properties
+|     messages_fr.properties
+|     messages_it.properties
+|     messages_ja.properties
+|     messages_ko.properties
+|     messages_pt_BR.properties
+|     messages_sv.properties
+|     messages_zh_CN.properties
+|     messages_zh_HK.properties
+|     messages_zh_TW.properties
+|     splash.gif
+|     splash@2x.gif
+|     splash_11-lic.gif
+|     splash_11@2x-lic.gif
+|     deploy.jar
+|
+|-----ext
+|     access-bridge-32.jar
+|     access-bridge.jar
+|     cldrdata.jar
+|     dnsns.jar
+|     jaccess.jar
+|     jfxrt.jar
+|     localedata.jar
+|     meta-index
+|     nashorn.jar
+|     sunec.jar
+|     sunjce_provider.jar
+|     sunmscapi.jar
+|     sunpkcs11.jar
+|     zipfs.jar
+|     flavormap.properties
+|     fontconfig.bfc
+|     fontconfig.properties.src
+|
+|-----fonts
+|     LucidaBrightDemiBold.ttf
+|     LucidaBrightDemiItalic.ttf
+|     LucidaBrightItalic.ttf
+|     LucidaBrightRegular.ttf
+|     LucidaSansDemiBold.ttf
+|     LucidaSansRegular.ttf
+|     LucidaTypewriterBold.ttf
+|     LucidaTypewriterRegular.ttf
+|     hijrah-config-umalqura.properties
+|
+|-----i386
+|     jvm.cfg
+|
+|-----images
+|
+|-----cursors
+|     cursors.properties
+|     invalid32x32.gif
+|     win32_CopyDrop32x32.gif
+|     win32_CopyNoDrop32x32.gif
+|     win32_LinkDrop32x32.gif
+|     win32_LinkNoDrop32x32.gif
+|     win32_MoveDrop32x32.gif
+|     win32_MoveNoDrop32x32.gif
+|     javafx.properties
+|     javaws.jar
+|     jce.jar
+|
+|-----jfr
+|     default.jfc
+|     profile.jfc
+|     jfr.jar
+|     jfxswt.jar
+|     jsse.jar
+|     jvm.hprof.txt
+|     logging.properties
+|
+|-----management
+|     jmxremote.access
+|     jmxremote.password.template
+|     management.properties
+|     snmp.acl.template
+|     management-agent.jar
+|     meta-index
+|     net.properties
+|     plugin.jar
+|     psfont.properties.ja
+|     psfontj2d.properties
+|     resources.jar
+|     rt.jar
+|
+|-----security
+|     blacklist
+|     blacklisted.certs
+|     cacerts
+|     java.policy
+|     java.security
+|     javaws.policy
+|     local_policy.jar
+|     trusted.libraries
+|     US_export_policy.jar
+|     sound.properties
+|     tzdb.dat
+|     tzmappings
+|     LICENSE
+|     README.txt
+|     release
+|     THIRDPARTYLICENSEREADME-JAVAFX.txt
+|     THIRDPARTYLICENSEREADME.txt
+|     Welcome.html
+|     low.ini
+|     medium.ini
+|
+|-----Mods
+|
+|-----Redist
+|     DirectX Web setup.exe
+|     vcredist_x64_2017.exe
+|     vcredist_x86_2017.exe
+|
+|-----Skyrim
+|     SkyrimPrefs.ini
+|     Skyrim.ccc
+|     SkyrimSE.cdx
+|     SkyrimSE.exe
+|     SkyrimSELauncher.exe
+|     Skyrim_Default.ini
+|     start.bat
+|     steam_api64.cdx
+|     steam_api64.dll
+|     steam_emu.ini
+|     ultra.ini
+|     unins000.dat
+|     unins000.exe
