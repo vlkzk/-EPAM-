@@ -12,7 +12,6 @@ public class Tree {
         File files = new File(path);
         sa.append(files.getName()).append("\n");
         writeFile(getPathToWriteFile(), readFiles(files, sa));
-        System.out.println(sa);
     }
 
     public static String readFiles(File files, StringBuilder sa) {
