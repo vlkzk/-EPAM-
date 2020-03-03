@@ -21,7 +21,7 @@ public class WebDriverPatebinTestBash {
         pastebinHomeBash = new PastebinHomeBash(driver);
     }
 
-    @Test (priority = 1)
+    @Test
     public void successfulCreateNewPaste() {
         pastebinHomeBash.openPage();
         pastebinHomeBash.enterPast();
@@ -31,21 +31,6 @@ public class WebDriverPatebinTestBash {
         pastebinHomeBash.createNewPast();
         Assert.assertTrue(pastebinResultBash.getResultOfCreating());
     }
-
-//    @Test (priority = 2)
-//    public void correctNamePaste() {
-//        Assert.assertTrue(pastebinResultBash.getPasteName());
-//    }
-//
-//    @Test (priority = 3)
-//    public void correctPasteCode() {
-//        Assert.assertTrue(pastebinResultBash.getPasteCode());
-//    }
-//
-//    @Test (priority = 4)
-//    public void correctSyntaxHighlights() {
-//        Assert.assertTrue(pastebinResultBash.getSyntaxHighlights());
-//    }
 
     @AfterMethod(alwaysRun = true)
     public void browserTearDown() {
