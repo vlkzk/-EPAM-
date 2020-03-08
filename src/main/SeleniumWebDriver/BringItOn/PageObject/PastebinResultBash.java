@@ -14,7 +14,7 @@ public class PastebinResultBash {
         return
                   driver.findElement(By.xpath("//*[@id='success']")).getText()
                 .equals("NOTE: Your guest paste has been posted. If you sign up for a free account, you can edit and delete your pastes!")
-                
+
                 & driver.findElement(By.xpath("//*[@id='content_left']/div[2]/div[3]/div[1]/h1")).getText()
                 .equals("how to gain dominance among developers")
 
